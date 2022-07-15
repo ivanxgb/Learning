@@ -87,3 +87,31 @@ func learningFmt() {
 	fmt.Printf("helloMessage: %T", helloMessage) // %T will print datatype
 
 }
+
+// Returning a value. a, b int mean that a and b are both int
+func multiply(a, b int) int {
+	return a * b
+}
+
+// We can make functions that return more than one value. This function return text and result, string and int
+func square(a int) (text string, result int) {
+	return fmt.Sprintf("The square of %d is:", a), a * a
+}
+
+func testingReturns() {
+	a, b := 3, 4
+
+	multiply := multiply(a, b)
+	println(multiply)
+
+	// Getting two returns
+	textA, resultA := square(a)
+	println(textA, resultA)
+
+	// If we need to omit one of the result, we can do that using "_" for ignoring that result
+	_, resultB := square(b)
+	println(resultB)
+}
+
+// godoc.org for documentation
+// Cobra package for create a CLI
