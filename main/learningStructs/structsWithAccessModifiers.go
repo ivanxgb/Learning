@@ -1,4 +1,4 @@
-package anotherPackage
+package learningStructs
 
 import "fmt"
 

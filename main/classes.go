@@ -1,7 +1,7 @@
 package main
 
 import (
-	ap "Learning/main/anotherPackage"
+	ap "Learning/main/learningStructs"
 	"fmt"
 )
 
